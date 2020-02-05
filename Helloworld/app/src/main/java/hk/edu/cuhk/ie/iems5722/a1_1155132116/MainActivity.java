@@ -1,9 +1,10 @@
-package com.example.helloworld;
+package hk.edu.cuhk.ie.iems5722.a1_1155132116;
 
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+import hk.edu.cuhk.ie.iems5722.a1_1155132116.R;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
