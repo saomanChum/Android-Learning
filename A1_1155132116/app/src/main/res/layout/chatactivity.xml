@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_chat"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:navigationIcon="@drawable/left_arrow"
+            app:title="@string/chatroom"
+            app:titleTextColor="@color/white"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
     <ListView
         android:id="@+id/chat_list"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:divider="@color/black"/>
+        android:divider="@color/white"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -18,11 +38,11 @@
             android:layout_weight="1"
             android:hint="@string/hint"
             android:maxLines="2"/>
-        <Button
+        <ImageButton
             android:id="@+id/send"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:text="@string/send"/>
+            android:background="@drawable/send_icon50"/>
     </LinearLayout>
 
 </LinearLayout>
